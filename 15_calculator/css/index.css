@@ -1,0 +1,7 @@
+.default-input {
+    border: aquamarine 4px solid;
+}
+
+.error-input {
+    border: red 4px solid;
+}
