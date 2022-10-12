@@ -1,35 +1,64 @@
+var buttonPlus = document.getElementById('buttonPlus')
+var buttonMinus = document.getElementById('buttonMinus')
+var buttonMul = document.getElementById('buttonMul')
+var buttonDiv = document.getElementById('buttonDiv')
 
-// function addErrorClass(elementId) {
-//     var firstName = document.getElementById('first-name')
-//     var lastName = document.getElementById('last-name')
-//     var address = document.getElementById('address')
-// }
 
-function addErrorClass(elementId) {
-    var element = document.getElementById(elementId)
-    element.className = 'error-input'
+
+function onButtonPlusClick() {
+    console.log('onButtonPlusClick')
+
+    var input1 = document.getElementById('number1')
+    var input2 = document.getElementById('number2')
+
+    var number1 = Number(input1.value)
+    var number2 = Number(input2.value)
+
+    var sum = number1 + number2
+
+    window.alert(sum)
+}
+function onButtonMinusClick() {
+    console.log('onButtonMinusClick')
+
+    var input1 = document.getElementById('number1')
+    var input2 = document.getElementById('number2')
+
+    var number1 = Number(input1.value)
+    var number2 = Number(input2.value)
+
+    var sum = number1 - number2
+
+    window.alert(sum)
+}
+function onButtonMulClick() {
+    console.log('onButtonMulClick')
+
+    var input1 = document.getElementById('number1')
+    var input2 = document.getElementById('number2')
+
+    var number1 = Number(input1.value)
+    var number2 = Number(input2.value)
+
+    var sum = number1 * number2
+
+    window.alert(sum)
+}
+function onButtonDivClick() {
+    console.log('onButtonDivClick')
+
+    var input1 = document.getElementById('number1')
+    var input2 = document.getElementById('number2')
+
+    var number1 = Number(input1.value)
+    var number2 = Number(input2.value)
+
+    var sum = number1 / number2
+
+    window.alert(sum)
 }
 
-function addErrorClassToAllInputs() {
-    addErrorClass('first-name')
-    addErrorClass('last-name')
-    addErrorClass('address')
-}
-
-//addErrorClass('last-name')
-
-//window.setTimeout(addErrorClassToAllInputs, 3000)
-
-//addErrorClassToAllInputs()
-
-var sendButton = document.getElementById('send-button')
-
-sendButton.addEventListener('click', addErrorClassToAllInputs)
-
-function onFirstNameReyUp() {
-    addErrorClass('first-name')
-}
-
-var firstNameEl = document.getElementById('first-name')
-
-firstNameEl.addEventListener('keyup', onFirstNameReyUp)
+buttonPlus.addEventListener('click', onButtonPlusClick)
+buttonMinus.addEventListener('click', onButtonMinusClick)
+buttonMul.addEventListener('click', onButtonMulClick)
+buttonDiv.addEventListener('click', onButtonDivClick)
