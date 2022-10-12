@@ -1,7 +1,23 @@
-.default-input {
-    border: aquamarine 4px solid;
+.wierd_calculator {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: crimson;
+    padding: 20px;
+    border: 1px solid black;
 }
 
-.error-input {
-    border: red 4px solid;
+.wierd_calculator .operations-block button {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+
+.wierd_calculator .inputs-block .input-block {
+    display: inline-block;
+    padding: 10px;
+}
+
+.wierd_calculator .inputs-block .input-block label {
+    display: block;
 }
