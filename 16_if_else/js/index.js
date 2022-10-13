@@ -14,23 +14,41 @@ function getNumber2() {
     return Number(input2.value)
 }
 
+// function calculate(operationCode) {
+//     var res
+//     if (operationCode === '+') {
+//         res = getNumber1() + getNumber2()
+//     }
+//     if (operationCode === '-') {
+//         res = getNumber1() - getNumber2()
+//     }
+//     if (operationCode === '*') {
+//         res = getNumber1() * getNumber2()
+//     }
+//     if (operationCode === '/') {
+//         res = getNumber1() / getNumber2()
+//     }
+//     window.alert(res)
+// }
+
 function calculate(operationCode) {
     var res
-    if (operationCode === '+') {
-        res = getNumber1() + getNumber2()
-    }
-    if (operationCode === '-') {
-        res = getNumber1() - getNumber2()
-    }
-    if (operationCode === '*') {
-        res = getNumber1() * getNumber2()
-    }
-    if (operationCode === '/') {
-        res = getNumber1() / getNumber2()
+    switch (operationCode) {
+        case '+':
+            res = getNumber1() + getNumber2()
+            break
+        case '-':
+            res = getNumber1() - getNumber2()
+            break
+        case '*':
+            res = getNumber1() * getNumber2()
+            break
+        case '/':
+            res = getNumber1() / getNumber2()
+            break
     }
     window.alert(res)
 }
-
 
 function onButtonPlusClick() {
     calculate( '+')
