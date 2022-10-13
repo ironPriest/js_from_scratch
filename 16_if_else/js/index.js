@@ -16,16 +16,16 @@ function getNumber2() {
 
 function calculate(operationCode) {
     var res
-    if (operationCode == '+') {
+    if (operationCode === '+') {
         res = getNumber1() + getNumber2()
     }
-    if (operationCode == '-') {
+    if (operationCode === '-') {
         res = getNumber1() - getNumber2()
     }
-    if (operationCode == '*') {
+    if (operationCode === '*') {
         res = getNumber1() * getNumber2()
     }
-    if (operationCode == '/') {
+    if (operationCode === '/') {
         res = getNumber1() / getNumber2()
     }
     window.alert(res)
